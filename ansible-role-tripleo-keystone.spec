@@ -6,7 +6,7 @@
 Name:           %{rolename}
 Version:        XXX
 Release:        XXX
-Summary:        Ansible role to allow modification to container images built for the TripleO project.
+Summary:        Ansible Keystone role for the TripleO project
 
 Group:          System Environment/Base
 License:        ASL 2.0
@@ -24,7 +24,7 @@ Requires: ansible
 
 %description
 
-Ansible role to allow modification to container images built for the TripleO project.
+Ansible Keystone role for the TripleO project
 
 %prep
 %autosetup -n %{rolename}-%{upstream_version} -S git
