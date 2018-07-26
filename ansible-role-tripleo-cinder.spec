@@ -1,16 +1,16 @@
-%global srcname ansible_role_tripleo_keystone
-%global rolename ansible-role-tripleo-keystone
+%global srcname ansible_role_tripleo_cinder
+%global rolename ansible-role-tripleo-cinder
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
 Version:        XXX
 Release:        XXX
-Summary:        Ansible role to allow modification to container images built for the TripleO project.
+Summary:        Ansible Cinder role for the TripleO project
 
 Group:          System Environment/Base
 License:        ASL 2.0
-URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-keystone
+URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-cinder
 Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
@@ -24,7 +24,7 @@ Requires: ansible
 
 %description
 
-Ansible role to allow modification to container images built for the TripleO project.
+Ansible Cinder role for the TripleO project
 
 %prep
 %autosetup -n %{rolename}-%{upstream_version} -S git
