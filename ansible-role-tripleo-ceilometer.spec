@@ -1,16 +1,16 @@
-%global srcname ansible_role_tripleo_cinder
-%global rolename ansible-role-tripleo-cinder
+%global srcname ansible_role_tripleo_ceilometer
+%global rolename ansible-role-tripleo-ceilometer
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
 Version: 0.0.1.dev1
 Release: 99999
-Summary:        Ansible Cinder role for the TripleO project
+Summary:        Ansible Ceilometer role for the TripleO project
 
 Group:          System Environment/Base
 License:        ASL 2.0
-URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-cinder
+URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-ceilometer
 Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
@@ -24,7 +24,7 @@ Requires: ansible
 
 %description
 
-Ansible Cinder role for the TripleO project
+Ansible Ceilometer role for the TripleO project
 
 %prep
 %autosetup -n %{rolename}-%{upstream_version} -S git
