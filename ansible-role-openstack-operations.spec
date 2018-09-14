@@ -4,8 +4,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version: 0.0.1.dev1
-Release: 99999
+Version:        0.0.1.dev1
+Release:        99999
 Summary:        Ansible role to perform some OpenStack Day 2 Operations
 
 Group:          System Environment/Base

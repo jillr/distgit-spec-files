@@ -11,7 +11,7 @@ Summary:        Ansible Congress role for the TripleO project
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-congress
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+Source0: ansible-role-tripleo-zaqar-master.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git

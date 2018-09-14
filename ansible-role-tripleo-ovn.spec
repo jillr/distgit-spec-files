@@ -1,17 +1,17 @@
-%global srcname ansible_role_tripleo_aodh
-%global rolename ansible-role-tripleo-aodh
+%global srcname ansible_role_tripleo_ovn
+%global rolename ansible-role-tripleo-ovn
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version: 0.0.1.dev1
-Release: 99999
-Summary:        Ansible Aodh role for the TripleO project
+Version:        0.0.1.dev1
+Release:        99999
+Summary:        Ansible Ovn role for the TripleO project
 
 Group:          System Environment/Base
 License:        ASL 2.0
-URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-aodh
-Source0: ansible-role-tripleo-zaqar-master.tar.gz
+URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-ovn
+Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
@@ -24,7 +24,7 @@ Requires: ansible
 
 %description
 
-Ansible Aodh role for the TripleO project
+Ansible Ovn role for the TripleO project
 
 %prep
 %autosetup -n %{rolename}-%{upstream_version} -S git

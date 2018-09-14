@@ -4,8 +4,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version:        0.0.1.dev1
+Release:        99999
 Summary:        Ansible Rabbitmq role for the TripleO project
 
 Group:          System Environment/Base

@@ -4,14 +4,14 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{rolename}
-Version:        XXX
-Release:        XXX
+Version: 0.0.1.dev1
+Release: 99999
 Summary:        Ansible Keystone role for the TripleO project
 
 Group:          System Environment/Base
 License:        ASL 2.0
 URL:            https://git.openstack.org/cgit/openstack/ansible-role-tripleo-keystone
-Source0:        https://tarballs.openstack.org/%{rolename}/%{rolename}-%{upstream_version}.tar.gz
+Source0: ansible-role-tripleo-zaqar-master.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  git
