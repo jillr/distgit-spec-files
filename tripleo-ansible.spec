@@ -6,7 +6,7 @@
 Name:           %{rolename}
 Version:        0.0.1.dev1
 Release:        99999
-Summary:        Ansible playbooks for the TripleO project
+Summary:        Ansible project for TripleO
 
 Group:          System Environment/Base
 License:        ASL 2.0
@@ -24,7 +24,7 @@ Requires: ansible
 
 %description
 
-Ansible playbooks for the TripleO project
+Ansible project for TripleO
 
 %prep
 %autosetup -n %{rolename}-%{upstream_version} -S git
@@ -44,7 +44,7 @@ export SKIP_PIP_INSTALL=1
 %doc README*
 %license LICENSE
 %{python2_sitelib}/%{srcname}-*.egg-info
-%{_datadir}/ansible/roles/
+%{_datadir}/ansible/
 
 
 %changelog
